@@ -1,0 +1,53 @@
+OptionButton < Button
+  margin-left: -30
+  width: 80
+
+HeadlessWindow
+  id: windowDepot
+  size: 480 259
+  image-source: background_dialog
+  anchors.centerIn: parent
+  &focusable: false
+  @onEscape: self:hide()
+
+  Label
+    id: lblTitle
+    font: sans-bold-16px
+    anchors.top: parent.top
+    anchors.left: parent.left
+    !text: tr('Title')
+    margin: 3 0 5 73
+    text-auto-resize: true
+
+  UICreature
+    id: outfitBox
+    size: 56 56
+    anchors.top: prev.bottom
+    anchors.left: parent.left
+    margin: 60 0 5 30
+
+  Label
+    id: lblMessage
+    padding-bottom: 5
+    font: sans-bold-16px
+    anchors.top: prev.top
+    anchors.left: prev.right
+    anchors.right: parent.right
+    anchors.bottom: next.top
+    margin: 10 10 10 30
+    text-wrap: true
+
+  UIWidget
+    id: buttonHolder
+    anchors.bottom: parent.bottom
+    anchors.left: parent.left
+    margin-bottom: 7
+    margin-left: 5
+
+  Button
+    id: btnClose
+    anchors.bottom: parent.bottom
+    anchors.right: parent.right
+    !text: tr('Fechar')
+    margin: 0 10 7 5
+    @onClick: self:getParent():hide()

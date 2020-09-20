@@ -1,0 +1,11 @@
+Module
+  name: game_pokeinffo
+  description: Manage chat window and Pokedex and reports
+  author: Pokedex and reports: Mock. Original content: edubart, andrefaramir, baxnie, sn4ake, BeniS,
+  website: www.otclient.info
+  sandboxed: true
+  autoload: true
+  autoload-priority: 1000
+  scripts: [ game_pokeinffo ]
+  @onLoad: init()
+  @onUnload: terminate()

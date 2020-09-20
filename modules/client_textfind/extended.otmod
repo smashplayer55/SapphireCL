@@ -1,0 +1,17 @@
+Module
+  name: Pokemon Info
+  description: 
+  author: 
+  website: 
+
+  autoload: true
+  autoload-priority: 1000
+
+  scripts:
+    - extended.lua
+
+  dependencies:
+    - game_interface
+
+  @onLoad: init()
+  @onUnload: terminate()

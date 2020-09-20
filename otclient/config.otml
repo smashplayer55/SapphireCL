@@ -1,0 +1,102 @@
+window-size: 600 480
+window-pos: 383 144
+window-maximized: true
+uuid: wHqnwS4/x6cmiRkXp/L9rkn0NvI=
+locale: pt
+fullscreen: false
+showPrivateMessagesOnScreen: true
+painterEngine: 0
+showPing: false
+smartWalk: true
+dontStretchShrink: false
+vsync: false
+displayText: true
+displayHealth: true
+showLeftPanel: false
+enableAudio: false
+enableLights: true
+classicControl: true
+showFps: false
+musicSoundVolume: 100
+dashWalk: true
+backgroundFrameRate: 201
+ambientLight: 100
+enableMusicSound: true
+foregroundFrameRate: 61
+showPrivateMessagesInConsole: true
+displayNames: true
+showLevelsInConsole: true
+showStatusMessagesInConsole: true
+showTimestampsInConsole: true
+showEventMessagesInConsole: true
+autoChaseOverride: true
+showInfoMessagesInConsole: true
+report-uuid: 962a6335-c4f6-43ca-9f09-21bef5372642
+VipList:
+  VipInfo:
+UseIgnoreList: false
+UseWhiteList: false
+IgnorePrivateMessages: false
+IgnoreYelling: false
+host: 158.69.231.246
+port: 7171
+client-version: 854
+motd:
+last-used-character: Quinn
+last-used-world: Blue
+LastCombatControls:
+  Quinn:
+    fightMode: 2
+    chaseMode: 0
+    safeFight: true
+Minimap:
+  flags:
+  zoom: 0
+lastChannelsOpen:
+MiniWindows:
+  combatControlsWindow:
+    index: 3
+    position: 965 229
+    parentId: gameRootPanel
+    closed: true
+  battleWindow:
+    index: 1
+    parentId: gameRootPanel
+    position: 262 41
+  minimapWindow:
+    index: 3
+    parentId: gameRightPanel
+    closed: true
+  skillWindow:
+    parentId: gameRightPanel
+    index: 1
+  vipWindow:
+    parentId: gameRootPanel
+    index: 3
+    position: 970 238
+  cooldownWindow:
+    index: 4
+    parentId: gameRightPanel
+    closed: true
+  inventoryWindow:
+    parentId: gameRightPanel
+    index: 2
+  PokeData:
+    closed: false
+    parentId: gameRootPanel
+    position: 969 47
+game_console:
+  messageHistory:
+    1: /down
+    3: /cb shiny alakazam
+    2: /t
+IgnorePlayers:
+WhitelistedPlayers:
+game_interface:
+  splitterMarginBottom: 100
+ServerList:
+  158.69.231.246:
+    protocol: 854
+    port: 7171
+terminal-window:
+  poped: false

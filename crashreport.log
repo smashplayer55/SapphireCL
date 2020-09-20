@@ -1,0 +1,418 @@
+== application crashed
+app name: OTClient
+app version: 0.6.6
+build compiler: gcc 4.8.1
+build date: Mar  5 2019
+build type: release
+build revision: 0 (devel)
+crash date: Nov 01 2019 16:43:21
+exception: Integer divide by zero (0xc0000094)
+exception address: 0x00424353
+  backtrace:
+    0: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x0000000000424353]
+    1: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x00000000004244EF]
+    2: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x0000000000437CB6]
+    3: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000042E586]
+    4: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000044ACD9]
+    5: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046EC48]
+    6: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046EADB]
+    7: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046ECAD]
+    8: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046EADB]
+    9: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046ECAD]
+    10: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000049DDC0]
+    11: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000047977A]
+    12: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe(wglewIsSupported+0x123535) [0x000000000074B7E5]
+    13: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x0000000000401250]
+    14: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x00000000004012D5]
+    15: C:\WINDOWS\SYSTEM32\ntdll.dll(RtlGetAppContainerNamedObjectPath+0xe4) [0x0000000077617B74]
+    16: C:\WINDOWS\SYSTEM32\ntdll.dll(RtlGetAppContainerNamedObjectPath+0xb4) [0x0000000077617B44]
+
+== application crashed
+app name: OTClient
+app version: 0.6.6
+build compiler: gcc 4.8.1
+build date: Mar  5 2019
+build type: release
+build revision: 0 (devel)
+crash date: Nov 01 2019 16:43:55
+exception: Integer divide by zero (0xc0000094)
+exception address: 0x00424353
+  backtrace:
+    0: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x0000000000424353]
+    1: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x00000000004244EF]
+    2: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x0000000000437CB6]
+    3: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000042E586]
+    4: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000044ACD9]
+    5: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046EC48]
+    6: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046EADB]
+    7: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046ECAD]
+    8: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046EADB]
+    9: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046ECAD]
+    10: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000049DDC0]
+    11: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000047977A]
+    12: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe(wglewIsSupported+0x123535) [0x000000000074B7E5]
+    13: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x0000000000401250]
+    14: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x00000000004012D5]
+    15: C:\WINDOWS\SYSTEM32\ntdll.dll(RtlGetAppContainerNamedObjectPath+0xe4) [0x0000000077617B74]
+    16: C:\WINDOWS\SYSTEM32\ntdll.dll(RtlGetAppContainerNamedObjectPath+0xb4) [0x0000000077617B44]
+
+== application crashed
+app name: OTClient
+app version: 0.6.6
+build compiler: gcc 4.8.1
+build date: Mar  5 2019
+build type: release
+build revision: 0 (devel)
+crash date: Nov 02 2019 13:26:42
+exception: Integer divide by zero (0xc0000094)
+exception address: 0x00424353
+  backtrace:
+    0: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x0000000000424353]
+    1: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x00000000004244EF]
+    2: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x0000000000437CB6]
+    3: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000042E586]
+    4: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000044ACD9]
+    5: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046EC48]
+    6: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046EADB]
+    7: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046ECAD]
+    8: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046EADB]
+    9: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046ECAD]
+    10: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000049DDC0]
+    11: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000047977A]
+    12: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe(wglewIsSupported+0x123535) [0x000000000074B7E5]
+    13: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x0000000000401250]
+    14: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x00000000004012D5]
+    15: C:\WINDOWS\SYSTEM32\ntdll.dll(RtlGetAppContainerNamedObjectPath+0xe4) [0x0000000077617B74]
+    16: C:\WINDOWS\SYSTEM32\ntdll.dll(RtlGetAppContainerNamedObjectPath+0xb4) [0x0000000077617B44]
+
+== application crashed
+app name: OTClient
+app version: 0.6.6
+build compiler: gcc 4.8.1
+build date: Mar  5 2019
+build type: release
+build revision: 0 (devel)
+crash date: Nov 02 2019 13:28:09
+exception: Integer divide by zero (0xc0000094)
+exception address: 0x00424353
+  backtrace:
+    0: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x0000000000424353]
+    1: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x00000000004244EF]
+    2: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x0000000000437CB6]
+    3: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000042E586]
+    4: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000044ACD9]
+    5: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046EC48]
+    6: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046EADB]
+    7: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046ECAD]
+    8: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046EADB]
+    9: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046ECAD]
+    10: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000049DDC0]
+    11: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000047977A]
+    12: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe(wglewIsSupported+0x123535) [0x000000000074B7E5]
+    13: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x0000000000401250]
+    14: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x00000000004012D5]
+    15: C:\WINDOWS\SYSTEM32\ntdll.dll(RtlGetAppContainerNamedObjectPath+0xe4) [0x0000000077617B74]
+    16: C:\WINDOWS\SYSTEM32\ntdll.dll(RtlGetAppContainerNamedObjectPath+0xb4) [0x0000000077617B44]
+
+== application crashed
+app name: OTClient
+app version: 0.6.6
+build compiler: gcc 4.8.1
+build date: Mar  5 2019
+build type: release
+build revision: 0 (devel)
+crash date: Nov 05 2019 21:35:08
+exception: Integer divide by zero (0xc0000094)
+exception address: 0x00424353
+  backtrace:
+    0: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x0000000000424353]
+    1: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x00000000004244EF]
+    2: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x0000000000437CB6]
+    3: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000042E586]
+    4: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000044ACD9]
+    5: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046EC48]
+    6: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046EADB]
+    7: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046ECAD]
+    8: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046EADB]
+    9: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046ECAD]
+    10: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000049DDC0]
+    11: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000047977A]
+    12: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe(wglewIsSupported+0x123535) [0x000000000074B7E5]
+    13: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x0000000000401250]
+    14: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x00000000004012D5]
+    15: C:\WINDOWS\SYSTEM32\ntdll.dll(RtlGetAppContainerNamedObjectPath+0xe4) [0x0000000077BB7B74]
+    16: C:\WINDOWS\SYSTEM32\ntdll.dll(RtlGetAppContainerNamedObjectPath+0xb4) [0x0000000077BB7B44]
+
+== application crashed
+app name: OTClient
+app version: 0.6.6
+build compiler: gcc 4.8.1
+build date: Mar  5 2019
+build type: release
+build revision: 0 (devel)
+crash date: Nov 09 2019 19:56:09
+exception: Integer divide by zero (0xc0000094)
+exception address: 0x00424353
+  backtrace:
+    0: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x0000000000424353]
+    1: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x00000000004244EF]
+    2: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x0000000000437CB6]
+    3: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000042E586]
+    4: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000044ACD9]
+    5: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046EC48]
+    6: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046EADB]
+    7: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046ECAD]
+    8: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046EADB]
+    9: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046ECAD]
+    10: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000049DDC0]
+    11: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000047977A]
+    12: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe(wglewIsSupported+0x123535) [0x000000000074B7E5]
+    13: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x0000000000401250]
+    14: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x00000000004012D5]
+    15: C:\WINDOWS\SYSTEM32\ntdll.dll(RtlGetAppContainerNamedObjectPath+0xe4) [0x0000000077627B74]
+    16: C:\WINDOWS\SYSTEM32\ntdll.dll(RtlGetAppContainerNamedObjectPath+0xb4) [0x0000000077627B44]
+
+== application crashed
+app name: OTClient
+app version: 0.6.6
+build compiler: gcc 4.8.1
+build date: Mar  5 2019
+build type: release
+build revision: 0 (devel)
+crash date: Nov 09 2019 20:00:19
+exception: Integer divide by zero (0xc0000094)
+exception address: 0x00424353
+  backtrace:
+    0: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x0000000000424353]
+    1: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x00000000004244EF]
+    2: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x0000000000437CB6]
+    3: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000042E586]
+    4: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000044ACD9]
+    5: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046EC48]
+    6: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046EADB]
+    7: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046ECAD]
+    8: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046EADB]
+    9: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046ECAD]
+    10: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000049DDC0]
+    11: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000047977A]
+    12: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe(wglewIsSupported+0x123535) [0x000000000074B7E5]
+    13: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x0000000000401250]
+    14: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x00000000004012D5]
+    15: C:\WINDOWS\SYSTEM32\ntdll.dll(RtlGetAppContainerNamedObjectPath+0xe4) [0x0000000077627B74]
+    16: C:\WINDOWS\SYSTEM32\ntdll.dll(RtlGetAppContainerNamedObjectPath+0xb4) [0x0000000077627B44]
+
+== application crashed
+app name: OTClient
+app version: 0.6.6
+build compiler: gcc 4.8.1
+build date: Mar  5 2019
+build type: release
+build revision: 0 (devel)
+crash date: Nov 10 2019 14:03:33
+exception: Integer divide by zero (0xc0000094)
+exception address: 0x00424353
+  backtrace:
+    0: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x0000000000424353]
+    1: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x00000000004244EF]
+    2: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x0000000000437CB6]
+    3: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000042E586]
+    4: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000044ACD9]
+    5: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046EC48]
+    6: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046EADB]
+    7: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046ECAD]
+    8: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046EADB]
+    9: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000046ECAD]
+    10: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000049DDC0]
+    11: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x000000000047977A]
+    12: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe(wglewIsSupported+0x123535) [0x000000000074B7E5]
+    13: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x0000000000401250]
+    14: C:\Users\Hacke\Desktop\PokeZr Oficial\Client 2\OPGL.exe [0x00000000004012D5]
+    15: C:\WINDOWS\SYSTEM32\ntdll.dll(RtlGetAppContainerNamedObjectPath+0xe4) [0x0000000077627B74]
+    16: C:\WINDOWS\SYSTEM32\ntdll.dll(RtlGetAppContainerNamedObjectPath+0xb4) [0x0000000077627B44]
+
+== application crashed
+app name: OTClient
+app version: 0.6.6
+build compiler: gcc 4.8.1
+build date: Apr  7 2020
+build type: RELEASE
+build revision: 0 (devel)
+crash date: Aug 06 2020 19:08:35
+exception: Access violation (0xc0000005)
+exception address: 0x00467c75
+  backtrace:
+    0: D:\Files\Poketibia\Client 1\otclients.exe [0x0000000000467C75]
+    1: D:\Files\Poketibia\Client 1\otclients.exe [0x0000000000467DE1]
+    2: D:\Files\Poketibia\Client 1\otclients.exe [0x0000000000468128]
+    3: D:\Files\Poketibia\Client 1\otclients.exe [0x000000000041B7E4]
+    4: D:\Files\Poketibia\Client 1\otclients.exe [0x0000000000430469]
+    5: D:\Files\Poketibia\Client 1\otclients.exe [0x000000000044C8B1]
+    6: D:\Files\Poketibia\Client 1\otclients.exe [0x0000000000470820]
+    7: D:\Files\Poketibia\Client 1\otclients.exe [0x00000000004706B3]
+    8: D:\Files\Poketibia\Client 1\otclients.exe [0x0000000000470885]
+    9: D:\Files\Poketibia\Client 1\otclients.exe [0x00000000004706B3]
+    10: D:\Files\Poketibia\Client 1\otclients.exe [0x0000000000470885]
+    11: D:\Files\Poketibia\Client 1\otclients.exe [0x000000000049F998]
+    12: D:\Files\Poketibia\Client 1\otclients.exe [0x000000000047B352]
+    13: D:\Files\Poketibia\Client 1\otclients.exe(wglewIsSupported+0x1235b5) [0x000000000074D425]
+    14: D:\Files\Poketibia\Client 1\otclients.exe [0x0000000000401250]
+    15: D:\Files\Poketibia\Client 1\otclients.exe [0x00000000004012D5]
+    16: C:\Windows\SYSTEM32\ntdll.dll(RtlGetAppContainerNamedObjectPath+0xe4) [0x0000000077B67084]
+    17: C:\Windows\SYSTEM32\ntdll.dll(RtlGetAppContainerNamedObjectPath+0xb4) [0x0000000077B67054]
+
+== application crashed
+app name: OTClient
+app version: 0.6.6
+build compiler: gcc 4.8.1
+build date: Apr  7 2020
+build type: RELEASE
+build revision: 0 (devel)
+crash date: Aug 06 2020 19:35:54
+exception: Access violation (0xc0000005)
+exception address: 0x00467c75
+  backtrace:
+    0: D:\Files\Poketibia\Client 1\otclients.exe [0x0000000000467C75]
+    1: D:\Files\Poketibia\Client 1\otclients.exe [0x0000000000467DE1]
+    2: D:\Files\Poketibia\Client 1\otclients.exe [0x0000000000468128]
+    3: D:\Files\Poketibia\Client 1\otclients.exe [0x000000000041B7E4]
+    4: D:\Files\Poketibia\Client 1\otclients.exe [0x0000000000430469]
+    5: D:\Files\Poketibia\Client 1\otclients.exe [0x000000000044C8B1]
+    6: D:\Files\Poketibia\Client 1\otclients.exe [0x0000000000470820]
+    7: D:\Files\Poketibia\Client 1\otclients.exe [0x00000000004706B3]
+    8: D:\Files\Poketibia\Client 1\otclients.exe [0x0000000000470885]
+    9: D:\Files\Poketibia\Client 1\otclients.exe [0x00000000004706B3]
+    10: D:\Files\Poketibia\Client 1\otclients.exe [0x0000000000470885]
+    11: D:\Files\Poketibia\Client 1\otclients.exe [0x000000000049F998]
+    12: D:\Files\Poketibia\Client 1\otclients.exe [0x000000000047B352]
+    13: D:\Files\Poketibia\Client 1\otclients.exe(wglewIsSupported+0x1235b5) [0x000000000074D425]
+    14: D:\Files\Poketibia\Client 1\otclients.exe [0x0000000000401250]
+    15: D:\Files\Poketibia\Client 1\otclients.exe [0x00000000004012D5]
+    16: C:\Windows\SYSTEM32\ntdll.dll(RtlGetAppContainerNamedObjectPath+0xe4) [0x0000000077B67084]
+    17: C:\Windows\SYSTEM32\ntdll.dll(RtlGetAppContainerNamedObjectPath+0xb4) [0x0000000077B67054]
+
+== application crashed
+app name: OTClient
+app version: 0.6.7
+build compiler: gcc 5.3.0
+build date: Jul 27 2020
+build type: Release
+build revision: 0 (devel)
+crash date: Aug 16 2020 01:07:02
+exception: Integer divide by zero (0xc0000094)
+exception address: 0x0043ed8a
+  backtrace:
+    0: D:\Files\Poketibia\Client 1\otclient.exe [0x000000000043ED8A]
+    1: D:\Files\Poketibia\Client 1\otclient.exe [0x00000000004415B4]
+    2: D:\Files\Poketibia\Client 1\otclient.exe(alGetListeneriv+0x2416e2) [0x000000000076C902]
+    3: D:\Files\Poketibia\Client 1\otclient.exe(alGetListeneriv+0x24ac79) [0x0000000000775E99]
+    4: D:\Files\Poketibia\Client 1\otclient.exe [0x000000000042F771]
+    5: D:\Files\Poketibia\Client 1\otclient.exe(alGetListeneriv+0x3dc3b) [0x0000000000568E5B]
+    6: D:\Files\Poketibia\Client 1\otclient.exe(alGetListeneriv+0x3fc01) [0x000000000056AE21]
+    7: D:\Files\Poketibia\Client 1\otclient.exe(alGetListeneriv+0x45c54) [0x0000000000570E74]
+    8: D:\Files\Poketibia\Client 1\otclient.exe(alGetListeneriv+0x46c62) [0x0000000000571E82]
+    9: C:\Windows\SYSTEM32\ntdll.dll(RtlAllocateHeap+0x3e) [0x00000000770752FE]
+    10: C:\Windows\System32\msvcrt.dll(malloc+0x90) [0x0000000075EC7580]
+    11: D:\Files\Poketibia\Client 1\otclient.exe(alGetListeneriv+0x3e0c0) [0x00000000005692E0]
+    12: D:\Files\Poketibia\Client 1\otclient.exe(alGetListeneriv+0x3a600) [0x0000000000565820]
+    13: D:\Files\Poketibia\Client 1\otclient.exe(alGetListeneriv+0x3d34d) [0x000000000056856D]
+    14: D:\Files\Poketibia\Client 1\otclient.exe(alGetListeneriv+0x3e231) [0x0000000000569451]
+    15: D:\Files\Poketibia\Client 1\otclient.exe(alGetListeneriv+0x3e729) [0x0000000000569949]
+    16: D:\Files\Poketibia\Client 1\otclient.exe [0x000000000042E745]
+    17: D:\Files\Poketibia\Client 1\otclient.exe [0x000000000042D585]
+    18: D:\Files\Poketibia\Client 1\otclient.exe [0x0000000000423122]
+    19: D:\Files\Poketibia\Client 1\otclient.exe [0x0000000000422F79]
+    20: D:\Files\Poketibia\Client 1\otclient.exe [0x000000000042680E]
+    21: D:\Files\Poketibia\Client 1\otclient.exe(alGetListeneriv+0x254ddd) [0x000000000077FFFD]
+    22: D:\Files\Poketibia\Client 1\otclient.exe(alGetListeneriv+0x250dd1) [0x000000000077BFF1]
+    23: D:\Files\Poketibia\Client 1\otclient.exe [0x000000000042F771]
+    24: D:\Files\Poketibia\Client 1\otclient.exe(alGetListeneriv+0x3dc3b) [0x0000000000568E5B]
+    25: D:\Files\Poketibia\Client 1\otclient.exe(alGetListeneriv+0x45c54) [0x0000000000570E74]
+    26: D:\Files\Poketibia\Client 1\otclient.exe(alGetListeneriv+0x46c62) [0x0000000000571E82]
+    27: C:\Windows\SYSTEM32\ntdll.dll(RtlAllocateHeap+0x3e) [0x00000000770752FE]
+    28: C:\Windows\System32\msvcrt.dll(malloc+0x90) [0x0000000075EC7580]
+    29: D:\Files\Poketibia\Client 1\otclient.exe(alGetListeneriv+0x3e0c0) [0x00000000005692E0]
+
+== application crashed
+app name: OTClient
+app version: 0.6.7
+build compiler: gcc 5.3.0
+build date: Jul 27 2020
+build type: Release
+build revision: 0 (devel)
+crash date: Aug 16 2020 01:07:07
+exception: Integer divide by zero (0xc0000094)
+exception address: 0x0043ed8a
+  backtrace:
+    0: D:\Files\Poketibia\Client 1\otclient.exe [0x000000000043ED8A]
+    1: D:\Files\Poketibia\Client 1\otclient.exe [0x00000000004415B4]
+    2: D:\Files\Poketibia\Client 1\otclient.exe(alGetListeneriv+0x2416e2) [0x000000000076C902]
+    3: D:\Files\Poketibia\Client 1\otclient.exe(alGetListeneriv+0x24ac79) [0x0000000000775E99]
+    4: D:\Files\Poketibia\Client 1\otclient.exe [0x000000000042F771]
+    5: D:\Files\Poketibia\Client 1\otclient.exe(alGetListeneriv+0x3dc3b) [0x0000000000568E5B]
+    6: D:\Files\Poketibia\Client 1\otclient.exe(alGetListeneriv+0x3fc01) [0x000000000056AE21]
+    7: D:\Files\Poketibia\Client 1\otclient.exe(alGetListeneriv+0x45c54) [0x0000000000570E74]
+    8: D:\Files\Poketibia\Client 1\otclient.exe(alGetListeneriv+0x46c62) [0x0000000000571E82]
+    9: C:\Windows\SYSTEM32\ntdll.dll(RtlAllocateHeap+0x3e) [0x00000000770752FE]
+    10: C:\Windows\System32\msvcrt.dll(malloc+0x90) [0x0000000075EC7580]
+    11: D:\Files\Poketibia\Client 1\otclient.exe(alGetListeneriv+0x3e0c0) [0x00000000005692E0]
+    12: D:\Files\Poketibia\Client 1\otclient.exe(alGetListeneriv+0x3a600) [0x0000000000565820]
+    13: D:\Files\Poketibia\Client 1\otclient.exe(alGetListeneriv+0x3d34d) [0x000000000056856D]
+    14: D:\Files\Poketibia\Client 1\otclient.exe(alGetListeneriv+0x3e231) [0x0000000000569451]
+    15: D:\Files\Poketibia\Client 1\otclient.exe(alGetListeneriv+0x3e729) [0x0000000000569949]
+    16: D:\Files\Poketibia\Client 1\otclient.exe [0x000000000042E745]
+    17: D:\Files\Poketibia\Client 1\otclient.exe [0x000000000042D585]
+    18: D:\Files\Poketibia\Client 1\otclient.exe [0x0000000000423122]
+    19: D:\Files\Poketibia\Client 1\otclient.exe [0x0000000000422F79]
+    20: D:\Files\Poketibia\Client 1\otclient.exe [0x000000000042680E]
+    21: D:\Files\Poketibia\Client 1\otclient.exe(alGetListeneriv+0x254ddd) [0x000000000077FFFD]
+    22: D:\Files\Poketibia\Client 1\otclient.exe(alGetListeneriv+0x250dd1) [0x000000000077BFF1]
+    23: D:\Files\Poketibia\Client 1\otclient.exe [0x000000000042F771]
+    24: D:\Files\Poketibia\Client 1\otclient.exe(alGetListeneriv+0x3dc3b) [0x0000000000568E5B]
+    25: C:\Windows\SYSTEM32\ntdll.dll(RtlAcquireSRWLockShared+0x260) [0x000000007707D3F0]
+    26: D:\Files\Poketibia\Client 1\otclient.exe(alGetListeneriv+0x46c62) [0x0000000000571E82]
+    27: C:\Windows\SYSTEM32\ntdll.dll(RtlAllocateHeap+0x3e) [0x00000000770752FE]
+    28: C:\Windows\System32\msvcrt.dll(malloc+0x90) [0x0000000075EC7580]
+    29: D:\Files\Poketibia\Client 1\otclient.exe(alGetListeneriv+0x3e0c0) [0x00000000005692E0]
+
+== application crashed
+app name: OTClient
+app version: 0.6.7
+build compiler: gcc 5.3.0
+build date: Jul 27 2020
+build type: Release
+build revision: 0 (devel)
+crash date: Aug 16 2020 01:07:18
+exception: Integer divide by zero (0xc0000094)
+exception address: 0x0043ed8a
+  backtrace:
+    0: D:\Files\Poketibia\Client 1\otclient22.exe [0x000000000043ED8A]
+    1: D:\Files\Poketibia\Client 1\otclient22.exe [0x00000000004415B4]
+    2: D:\Files\Poketibia\Client 1\otclient22.exe(alGetListeneriv+0x2416f2) [0x000000000076C902]
+    3: D:\Files\Poketibia\Client 1\otclient22.exe(alGetListeneriv+0x24ac89) [0x0000000000775E99]
+    4: D:\Files\Poketibia\Client 1\otclient22.exe [0x000000000042F771]
+    5: D:\Files\Poketibia\Client 1\otclient22.exe(alGetListeneriv+0x3dc3b) [0x0000000000568E4B]
+    6: D:\Files\Poketibia\Client 1\otclient22.exe(alGetListeneriv+0x3fc01) [0x000000000056AE11]
+    7: D:\Files\Poketibia\Client 1\otclient22.exe(alGetListeneriv+0x45c54) [0x0000000000570E64]
+    8: D:\Files\Poketibia\Client 1\otclient22.exe(alGetListeneriv+0x46c62) [0x0000000000571E72]
+    9: C:\Windows\SYSTEM32\ntdll.dll(RtlAllocateHeap+0x3e) [0x00000000770752FE]
+    10: C:\Windows\System32\msvcrt.dll(malloc+0x90) [0x0000000075EC7580]
+    11: D:\Files\Poketibia\Client 1\otclient22.exe(alGetListeneriv+0x3e0c0) [0x00000000005692D0]
+    12: D:\Files\Poketibia\Client 1\otclient22.exe(alGetListeneriv+0x3a600) [0x0000000000565810]
+    13: D:\Files\Poketibia\Client 1\otclient22.exe(alGetListeneriv+0x3d34d) [0x000000000056855D]
+    14: D:\Files\Poketibia\Client 1\otclient22.exe(alGetListeneriv+0x3e231) [0x0000000000569441]
+    15: D:\Files\Poketibia\Client 1\otclient22.exe(alGetListeneriv+0x3e729) [0x0000000000569939]
+    16: D:\Files\Poketibia\Client 1\otclient22.exe [0x000000000042E745]
+    17: D:\Files\Poketibia\Client 1\otclient22.exe [0x000000000042D585]
+    18: D:\Files\Poketibia\Client 1\otclient22.exe [0x0000000000423122]
+    19: D:\Files\Poketibia\Client 1\otclient22.exe [0x0000000000422F79]
+    20: D:\Files\Poketibia\Client 1\otclient22.exe [0x000000000042680E]
+    21: D:\Files\Poketibia\Client 1\otclient22.exe(alGetListeneriv+0x254ded) [0x000000000077FFFD]
+    22: D:\Files\Poketibia\Client 1\otclient22.exe(alGetListeneriv+0x250de1) [0x000000000077BFF1]
+    23: D:\Files\Poketibia\Client 1\otclient22.exe [0x000000000042F771]
+    24: D:\Files\Poketibia\Client 1\otclient22.exe(alGetListeneriv+0x3dc3b) [0x0000000000568E4B]
+    25: D:\Files\Poketibia\Client 1\otclient22.exe(alGetListeneriv+0x45c54) [0x0000000000570E64]
+    26: D:\Files\Poketibia\Client 1\otclient22.exe(alGetListeneriv+0x46c62) [0x0000000000571E72]
+    27: C:\Windows\SYSTEM32\ntdll.dll(RtlAllocateHeap+0x3e) [0x00000000770752FE]
+    28: C:\Windows\System32\msvcrt.dll(malloc+0x90) [0x0000000075EC7580]
+    29: D:\Files\Poketibia\Client 1\otclient22.exe(alGetListeneriv+0x3e0c0) [0x00000000005692D0]
+

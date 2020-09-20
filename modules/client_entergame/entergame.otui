@@ -1,0 +1,305 @@
+EnterGameWindow < MainWindow
+  image-source: /images/game/Module/login/window
+  draggable: false
+
+AnuncioZring < UIButton
+Youtube < UIButton
+Facebook < UIButton
+Discord < UIButton
+Instagram < UIButton
+CriarAccount < UIButton
+RecuperarAccount < UIButton
+EnterGameButton < Button
+
+ServerListButton < UIButton
+  size: 17 17
+  image-source: /images/topbuttons/minimap
+  image-color: #ffffffff
+
+  $hover !disabled:
+    image-color: #ffffff99
+
+  $pressed:
+    image-color: #ffffff44
+
+  $disabled:
+    image-color: #ffffff55
+
+EnterGameWindow
+  id: enterGame
+  margin-top: 95
+  margin-left: -469
+  &authenticatorEnabled: false
+  &authenticatorHeight: 44
+  &stayLoggedBoxEnabled: false
+  &stayLoggedBoxHeight: 24
+  @onEnter: EnterGame.doLogin()
+
+  MenuLabel
+    anchors.left: parent.left
+    anchors.top: parent.top
+    text-auto-resize: true
+
+  PasswordTextEdit
+    id: accountNameTextEdit
+    image-source: /images/game/Module/login/text
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 36
+    margin-left: 85
+    margin-right: 54
+
+  MenuLabel
+    anchors.left: prev.left
+    anchors.top: prev.bottom
+    margin-top: 1
+    text-auto-resize: true
+
+  PasswordTextEdit
+    image-source: /images/game/Module/login/text
+    id: accountPasswordTextEdit
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 1
+    margin-left: 85
+    margin-right: 54
+
+  MenuLabel
+    id: authenticatorTokenLabel
+    !text: tr('Authenticator Token')
+    anchors.left: prev.left
+    anchors.top: prev.bottom
+    text-auto-resize: true
+    margin-top: -12
+    visible: false
+
+    $on:
+      visible: true
+      margin-top: 8
+
+  TextEdit
+    id: authenticatorTokenTextEdit
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: -22
+    visible: false
+    max-length: 8
+
+    $on:
+      visible: true
+      margin-top: 2
+
+  CheckBox
+    id: stayLoggedBox
+    !text: tr('Stay logged during session')
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 6
+    margin-top: -16
+    visible: false
+
+    $on:
+      visible: true
+      margin-top: 8
+
+  MenuLabel
+    id: serverLabel
+    !text: tr('Server')
+    anchors.left: prev.left
+    anchors.top: prev.bottom
+    margin-top: 8
+    text-auto-resize: true
+
+  ServerListButton
+    id: serverListButton
+    !tooltip: tr('Server list')
+    anchors.right: parent.right
+    anchors.top: serverLabel.bottom
+    margin-top: 3
+    @onClick: ServerList.show()
+
+  TextEdit
+    id: serverHostTextEdit
+    !tooltip: tr('Make sure that your client uses\nthe correct game client version')
+    anchors.left: parent.left
+    anchors.right: serverListButton.left
+    anchors.top: serverLabel.bottom
+    margin-top: 2
+    margin-right: 4
+
+  MenuLabel
+    id: clientLabel
+    !text: tr('Client Version')
+    anchors.left: parent.left
+    anchors.top: serverHostTextEdit.bottom
+    text-auto-resize: true
+    margin-right: 10
+    margin-top: 8
+
+  ComboBox
+    id: clientComboBox
+    anchors.left: parent.left
+    anchors.right: parent.horizontalCenter
+    anchors.top: clientLabel.bottom
+    margin-top: 2
+    margin-right: 3
+    width: 90
+    menu-scroll: true
+    menu-height: 125
+    menu-scroll-step: 25
+
+  MenuLabel
+    id: portLabel
+    !text: tr('Port')
+    anchors.left: serverPortTextEdit.left
+    anchors.top: serverHostTextEdit.bottom
+    margin-top: 8
+    text-auto-resize: true
+
+  TextEdit
+    id: serverPortTextEdit
+    text: 7171
+    anchors.right: parent.right
+    anchors.left: parent.horizontalCenter
+    anchors.top: clientComboBox.top
+    margin-left: 3
+
+  CheckBox
+    id: rememberPasswordBox
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: -10
+    margin-right: 70
+    margin-left: 80
+    @onCheckChange: self:getParent():getChildById('autoLoginBox'):setEnabled(self:isChecked())
+
+  CheckBox
+    id: autoLoginBox
+    enabled: false
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: -16
+    margin-left: 100
+
+  EnterGameButton
+    !text: 'Enter'
+    image-source: /images/game/Module/login/iniciar
+    size: 95 22
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    image-clip: 0 0 81 17
+    margin-top: -20
+    margin-right: 70
+    @onClick: EnterGame.doLogin()
+    $hover:
+      image-clip: 0 17 81 17
+
+    $pressed:
+      image-clip: 0 34 81 17
+
+  Youtube
+    image-source: /images/game/Module/login/youtube
+    size: 33 31
+    anchors.top: parent.top
+    anchors.left: parent.left
+    image-clip: 0 0 33 31
+    margin-top: 293
+    margin-left: 79
+    @onClick: youtube()
+    $hover:
+      image-clip: 0 31 33 31
+
+    $pressed:
+      image-clip: 0 62 33 31
+
+  Facebook
+    image-source: /images/game/Module/login/facebook
+    size: 33 31
+    anchors.top: parent.top
+    anchors.left: parent.left
+    image-clip: 0 0 33 31
+    margin-top: 293
+    margin-left: 133
+    @onClick: facebook()
+    $hover:
+      image-clip: 0 31 33 31
+
+    $pressed:
+      image-clip: 0 62 33 31
+
+  Discord
+    image-source: /images/game/Module/login/discord
+    size: 33 31
+    anchors.top: parent.top
+    anchors.left: parent.left
+    image-clip: 0 0 33 31
+    margin-top: 293
+    margin-left: 240
+    @onClick: discordsite()
+    $hover:
+      image-clip: 0 31 33 31
+
+    $pressed:
+      image-clip: 0 62 33 31
+
+  Instagram
+    image-source: /images/game/Module/login/Instagram
+    size: 33 31
+    anchors.top: parent.top
+    anchors.left: parent.left
+    image-clip: 0 0 33 31
+    margin-top: 293
+    margin-left: 190
+    @onClick: Instagram()
+    $hover:
+      image-clip: 0 31 33 31
+
+    $pressed:
+      image-clip: 0 62 33 31
+
+
+  RecuperarAccount
+    image-source: /images/game/Module/login/recuperar
+    size: 163 32
+    anchors.top: parent.top
+    anchors.left: parent.left
+    image-clip: 0 0 163 32
+    margin-top: 200
+    margin-left: 95
+    @onClick: recuperarconta()
+    $hover:
+      image-clip: 0 32 163 32
+
+    $pressed:
+      image-clip: 0 64 163 32
+
+  CriarAccount
+    image-source: /images/game/Module/login/criar
+    size: 163 32
+    anchors.top: parent.top
+    anchors.left: parent.left
+    image-clip: 0 0 163 32
+    margin-top: 160
+    margin-right: 10
+    margin-left: 95
+    @onClick: criarconta()
+    $hover:
+      image-clip: 0 32 163 32
+
+    $pressed:
+      image-clip: 0 64 163 32
+
+  Label
+    id: serverInfoLabel
+    font: verdana-11px-rounded
+    anchors.top: prev.top
+    anchors.left: parent.left
+    margin-top: 5
+    color: green
+    text-auto-resize: true

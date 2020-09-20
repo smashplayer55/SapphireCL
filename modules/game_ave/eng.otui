@@ -1,0 +1,236 @@
+Teste < UIButton
+  id: teste
+  text-offset: 15 -10
+  font: verdana-11px-rounded
+  color: white
+  icon-align: left
+  icon-offset: 5 0
+  height: 55
+  width: 330
+  background-color: #000000AA
+  border-width: 1
+  border-color: black
+  anchors.top: parent.top
+  anchors.right: parent.right
+
+  $hover:
+    background-color: #666666AA
+    border-color: #666666
+
+  $pressed:
+    background-color: #333333AA
+    border-color: #333333
+
+  $disabled:
+    background-color: #330000AA
+    border-color: #330000
+    color: red
+
+Felipe < UIButton
+  id: teste
+  text-offset: 15 -10
+  font: verdana-11px-rounded
+  color: white
+  icon-align: left
+  icon-offset: 5 0
+  height: 55
+  width: 330
+  background-color: #000000AA
+  border-width: 1
+  border-color: black
+  anchors.top: parent.top
+  anchors.right: parent.right
+
+  $hover:
+    background-color: #666666AA
+    border-color: #666666
+
+  $pressed:
+    background-color: #333333AA
+    border-color: #333333
+
+  $disabled:
+    background-color: #330000AA
+    border-color: #330000
+    color: red 
+
+Gabriel < UIButton
+  id: teste
+  text-offset: 15 -10
+  font: verdana-11px-rounded
+  color: white
+  icon-align: left
+  icon-offset: 5 0
+  height: 55
+  width: 330
+  background-color: #000000AA
+  border-width: 1
+  border-color: black
+  anchors.top: parent.top
+  anchors.right: parent.right
+
+  $hover:
+    background-color: #666666AA
+    border-color: #666666
+
+  $pressed:
+    background-color: #333333AA
+    border-color: #333333
+
+  $disabled:
+    background-color: #330000AA
+    border-color: #330000
+    color: red
+
+Lucia < UIButton
+  id: teste
+  text-offset: 15 -10
+  font: verdana-11px-rounded
+  color: white
+  icon-align: left
+  icon-offset: 5 0
+  height: 55
+  width: 330
+  background-color: #000000AA
+  border-width: 1
+  border-color: black
+  anchors.top: parent.top
+  anchors.right: parent.right
+
+  $hover:
+    background-color: #666666AA
+    border-color: #666666
+
+  $pressed:
+    background-color: #333333AA
+    border-color: #333333
+
+  $disabled:
+    background-color: #330000AA
+    border-color: #330000
+    color: red 
+
+
+ClansButton < UIButton
+  size: 190 370
+  color: alpha
+  icon-color: #888888
+  border-width: 1
+  border-color: black
+  anchors.top: parent.top
+  anchors.left: parent.left
+  @onClick: modules.game_memory.hide()
+
+MarketeButton < Teste
+  text-offset: 5 -20
+
+Felipetwo < Felipe
+
+Gabrieltwo < Felipe
+
+Lucia < Felipe
+
+Jesus < Felipe
+
+Jynx < Felipe
+
+Testet < Felipe
+
+Xbox < Felipe
+
+MainWindow
+  id: engWindow
+  size: 550 400
+  !text: tr('Adventure Workshop')
+  padding: 2
+  @onEnter: modules.game_eng.hide()
+  @onEscape: modules.game_eng.hide()
+
+  ClansButton
+    text: gardestrike
+    icon: imagens/estilista/todd
+    margin-top: 25
+    margin-left: 5
+
+  UIButton
+    id: closeButton
+    anchors.top: parent.top
+    anchors.right: parent.right
+    margin-top: 2
+    margin-right: 12
+    size: 14 14
+    image-source: /images/game/guide/button
+    image-clip: 0 0 14 14
+    @onClick: hide()
+
+  UIButton
+    id: aleatorio
+    anchors.top: parent.top
+    anchors.right: parent.right
+    margin-top: 25
+    margin-right: 15
+    size: 330 370
+    background-color: #000000AA
+
+  VerticalScrollBar
+    id: scrollBar
+    step: 35
+    pixels-scroll: true
+    anchors.top: parent.top
+    anchors.right: parent.right
+    anchors.bottom: parent.bottom
+
+  ScrollablePanel
+    vertical-scrollbar: scrollBar
+    anchors.fill: parent
+    margin-right: 15    
+    margin-top: 25
+
+    MarketeButton
+      !text: tr('Gold Bar(x5)\nUsado na criação de items!')
+      text-align: left
+      text-offset: 40 -0
+      margin-left: 15
+      icon: imagens/estilista/bar
+      !tooltip: tr('Para fabricar o item voce precisa de:\n 15 gold coin.')
+      @onClick:  g_game.talk("#bar#")
+
+    MarketeButton
+      !text: tr('Adventure Key(x5)\nUsado para abrir baus.!')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 54
+      margin-left: 15
+      icon: imagens/estilista/lockpick
+      !tooltip: tr('Para fabricar o item voce precisa de:\n 5 minerios de ferro.')
+      @onClick:  g_game.talk("#key#")
+
+    MarketeButton
+      !text: tr('Boost Stone\nAumenta o Boost +1!')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 108
+      margin-left: 15
+      icon: imagens/estilista/boost
+      !tooltip: tr('Para fabricar o item voce precisa de:\n 10 Barras de Ferro, 10 Gold Bar, \n 3 Ancient Stone , 3 Crystal Stone.')
+      @onClick:  g_game.talk("#boosts#")
+
+    MarketeButton
+      !text: tr('Bike\nAumenta a Speed + 300!')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 163
+      margin-left: 15
+      icon: imagens/estilista/bike
+      !tooltip: tr('Para fabricar o item voce precisa de:\n 50 barras de ferro.')
+      @onClick:  g_game.talk("#bike#")
+
+    MarketeButton
+      !text: tr('Premier Ball\n 2x Mais cath em pokemons do tipo:\n Shiny')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 217
+      margin-left: 15
+      icon: imagens/estilista/premier
+      !tooltip: tr('Para fabricar o item voce precisa de:\n 15 barras de ferro, 10 Boost Stone, 10 Shiny Stone.')
+      @onClick:  g_game.talk("#premier#")

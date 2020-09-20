@@ -1,0 +1,396 @@
+Teste < UIButton
+  id: teste
+  text-offset: 15 -10
+  font: verdana-11px-rounded
+  color: white
+  icon-align: left
+  icon-offset: 5 0
+  height: 55
+  width: 330
+  background-color: #000000AA
+  border-width: 1
+  border-color: black
+  anchors.top: parent.top
+  anchors.right: parent.right
+
+  $hover:
+    background-color: #666666AA
+    border-color: #666666
+
+  $pressed:
+    background-color: #333333AA
+    border-color: #333333
+
+  $disabled:
+    background-color: #330000AA
+    border-color: #330000
+    color: red
+
+Felipe < UIButton
+  id: teste
+  text-offset: 15 -10
+  font: verdana-11px-rounded
+  color: white
+  icon-align: left
+  icon-offset: 5 0
+  height: 55
+  width: 330
+  background-color: #000000AA
+  border-width: 1
+  border-color: black
+  anchors.top: parent.top
+  anchors.right: parent.right
+
+  $hover:
+    background-color: #666666AA
+    border-color: #666666
+
+  $pressed:
+    background-color: #333333AA
+    border-color: #333333
+
+  $disabled:
+    background-color: #330000AA
+    border-color: #330000
+    color: red 
+
+Gabriel < UIButton
+  id: teste
+  text-offset: 15 -10
+  font: verdana-11px-rounded
+  color: white
+  icon-align: left
+  icon-offset: 5 0
+  height: 55
+  width: 330
+  background-color: #000000AA
+  border-width: 1
+  border-color: black
+  anchors.top: parent.top
+  anchors.right: parent.right
+
+  $hover:
+    background-color: #666666AA
+    border-color: #666666
+
+  $pressed:
+    background-color: #333333AA
+    border-color: #333333
+
+  $disabled:
+    background-color: #330000AA
+    border-color: #330000
+    color: red
+
+Lucia < UIButton
+  id: teste
+  text-offset: 15 -10
+  font: verdana-11px-rounded
+  color: white
+  icon-align: left
+  icon-offset: 5 0
+  height: 55
+  width: 330
+  background-color: #000000AA
+  border-width: 1
+  border-color: black
+  anchors.top: parent.top
+  anchors.right: parent.right
+
+  $hover:
+    background-color: #666666AA
+    border-color: #666666
+
+  $pressed:
+    background-color: #333333AA
+    border-color: #333333
+
+  $disabled:
+    background-color: #330000AA
+    border-color: #330000
+    color: red 
+
+
+ClansButton < UIButton
+  size: 190 370
+  color: alpha
+  icon-color: #888888
+  border-width: 1
+  border-color: black
+  anchors.top: parent.top
+  anchors.left: parent.left
+  @onClick: modules.game_memory.hide()
+
+MarketeButton < Teste
+  text-offset: 5 -20
+
+Felipetwo < Felipe
+
+Gabrieltwo < Felipe
+
+Lucia < Felipe
+
+Jesus < Felipe
+
+Jynx < Felipe
+
+Testet < Felipe
+
+Xbox < Felipe
+
+MainWindow
+  id: engWindow
+  size: 550 400
+  !text: tr('Stylist Workshop')
+  padding: 2
+  @onEnter: modules.game_eng.hide()
+  @onEscape: modules.game_eng.hide()
+
+  ClansButton
+    text: gardestrike
+    icon: imagens/estilista/todd
+    margin-top: 25
+    margin-left: 5
+
+  UIButton
+    id: closeButton
+    anchors.top: parent.top
+    anchors.right: parent.right
+    margin-top: 2
+    margin-right: 12
+    size: 14 14
+    image-source: /images/game/guide/button
+    image-clip: 0 0 14 14
+    @onClick: hide()
+
+  UIButton
+    id: aleatorio
+    anchors.top: parent.top
+    anchors.right: parent.right
+    margin-top: 25
+    margin-right: 15
+    size: 330 370
+    background-color: #000000AA
+
+  VerticalScrollBar
+    id: scrollBar
+    step: 35
+    pixels-scroll: true
+    anchors.top: parent.top
+    anchors.right: parent.right
+    anchors.bottom: parent.bottom
+
+  ScrollablePanel
+    vertical-scrollbar: scrollBar
+    anchors.fill: parent
+    margin-right: 15    
+    margin-top: 25
+
+    MarketeButton
+      !text: tr('Roupa #1\nSexo Necessario:\nMale!')
+      text-align: left
+      text-offset: 40 -0
+      margin-left: 15
+      icon: imagens/estilista/Outfit3
+      !tooltip: tr('Para fabricar a roupa voce precisa de:\n 50 Tecidos.')
+      @onClick:  g_game.talk("#roupa1#")
+
+    MarketeButton
+      !text: tr('Roupa #2\nSexo Necessario:\nMale!')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 54
+      margin-left: 15
+      icon: imagens/estilista/Outfit4
+      !tooltip: tr('Para fabricar a roupa voce precisa de:\n 50 Tecidos, 10 Barras de Ferro.')
+      @onClick:  g_game.talk("#roupa2#")
+
+    MarketeButton
+      !text: tr('Roupa #3\nSexo Necessario:\nFemale!')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 108
+      margin-left: 15
+      icon: imagens/estilista/Outfit5
+      !tooltip: tr('Para fabricar a roupa voce precisa de:\n 50 Tecidos.')
+      @onClick:  g_game.talk("#roupa3#")
+
+    MarketeButton
+      !text: tr('Roupa #4\nSexo Necessario:\nMale!')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 163
+      margin-left: 15
+      icon: imagens/estilista/Outfit6
+      !tooltip: tr('Para fabricar a roupa voce precisa de:\n 50 Tecidos.')
+      @onClick:  g_game.talk("#roupa4#")
+
+    MarketeButton
+      !text: tr('Roupa #5\nSexo Necessario:\nMale!')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 217
+      margin-left: 15
+      icon: imagens/estilista/Outfit7
+      !tooltip: tr('Para fabricar a roupa voce precisa de:\n 50 Tecidos.')
+      @onClick:  g_game.talk("#roupa5#")
+
+    MarketeButton
+      !text: tr('Roupa #6\nSexo Necessario:\nMale!')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 272
+      margin-left: 15
+      icon: imagens/estilista/Outfit8
+      !tooltip: tr('Para fabricar a roupa voce precisa de:\n 50 Tecidos.')
+      @onClick:  g_game.talk("#roupa7#")
+
+    MarketeButton
+      !text: tr('Roupa #7\nSexo Necessario:\nMale, Female!')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 326
+      margin-left: 15
+      icon: imagens/estilista/Outfit9
+      !tooltip: tr('Para fabricar a roupa voce precisa de:\n 50 Tecidos, 5 Engima Stone.')
+      @onClick:  g_game.talk("#roupa6#")
+
+    MarketeButton
+      !text: tr('Roupa #8\nSexo Necessario:\nFemale!')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 380
+      margin-left: 15
+      icon: imagens/estilista/Outfit10
+      !tooltip: tr('Para fabricar a roupa voce precisa de:\n 80 Tecidos.')
+      @onClick:  g_game.talk("#roupa9#")
+
+    MarketeButton
+      !text: tr('Roupa #9\nSexo Necessario:\nMale, Female!')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 434
+      margin-left: 15
+      icon: imagens/estilista/Outfit11
+      !tooltip: tr('Para fabricar a roupa voce precisa de:\n 50 Tecidos.')
+      @onClick:  g_game.talk("#roupa10#")
+
+    MarketeButton
+      !text: tr('Roupa #10\nSexo Necessario:\nMale, Female!')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 488
+      margin-left: 15
+      icon: imagens/estilista/Outfit12
+      !tooltip: tr('Para fabricar a roupa voce precisa de:\n 50 Tecidos, 25 Barras de Ferro.')
+      @onClick:  g_game.talk("#roupa11#")
+
+    MarketeButton
+      !text: tr('Roupa #11\nSexo Necessario:\nMale, Female!')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 542
+      margin-left: 15
+      icon: imagens/estilista/Outfit13
+      !tooltip: tr('Para fabricar a roupa voce precisa de:\n 50 Tecidos, 30 Barras de Ferro.')
+      @onClick:  g_game.talk("#roupa12#")
+
+    MarketeButton
+      !text: tr('Roupa #12\nSexo Necessario:\nMale, Female!')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 596
+      margin-left: 15
+      icon: imagens/estilista/Outfit14
+      !tooltip: tr('Para fabricar a roupa voce precisa de:\n 50 Tecidos, 25 Barras de Ferro.')
+      @onClick:  g_game.talk("#roupa13#")
+
+    MarketeButton
+      !text: tr('Roupa #13\nSexo Necessario:\nMale, Female!')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 650
+      margin-left: 15
+      icon: imagens/estilista/Outfit15
+      !tooltip: tr('Para fabricar a roupa voce precisa de:\n 50 Tecidos, 20 Barras de Ferro.')
+      @onClick:  g_game.talk("#roupa14#")
+
+    MarketeButton
+      !text: tr('Roupa #14\nSexo Necessario:\nMale, Female!')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 704
+      margin-left: 15
+      icon: imagens/estilista/Outfit16
+      !tooltip: tr('Para fabricar a roupa voce precisa de:\n 50 Tecidos, 5 Barras de Ferro.')
+      @onClick:  g_game.talk("#roupa15#")
+
+    MarketeButton
+      !text: tr('Roupa #15\nSexo Necessario:\nMale!')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 758
+      margin-left: 15
+      icon: imagens/estilista/Outfit17
+      !tooltip: tr('Para fabricar a roupa voce precisa de:\n 50 Tecidos.')
+      @onClick:  g_game.talk("#roupa16#")
+
+    MarketeButton
+      !text: tr('Roupa #16\nSexo Necessario:\nFemale!')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 812
+      margin-left: 15
+      icon: imagens/estilista/Outfit18
+      !tooltip: tr('Para fabricar a roupa voce precisa de:\n 50 Tecidos.')
+      @onClick:  g_game.talk("#roupa17#")
+
+    MarketeButton
+      !text: tr('Roupa #17\nSexo Necessario:\nFemale!')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 866
+      margin-left: 15
+      icon: imagens/estilista/Outfit19
+      !tooltip: tr('Para fabricar a roupa voce precisa de:\n 80 Tecidos.')
+      @onClick:  g_game.talk("#roupa18#")
+
+    MarketeButton
+      !text: tr('Roupa #18\nSexo Necessario:\nMale!')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 920
+      margin-left: 15
+      icon: imagens/estilista/Outfit1
+      !tooltip: tr('Para fabricar a roupa voce precisa de:\n 80 Tecidos.')
+      @onClick:  g_game.talk("#roupa8#")
+
+    MarketeButton
+      !text: tr('Tabuas(x5)\nUsado para criacao de tecidos!')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 974
+      margin-left: 15
+      icon: imagens/estilista/tabua
+      !tooltip: tr('Para fabricar a roupa voce precisa de:\n 10 Madeiras.')
+      @onClick:  g_game.talk("#tabua#")
+
+    MarketeButton
+      !text: tr('Essencia(x5)\nUsado para criacao de tecidos!')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 1028
+      margin-left: 15
+      icon: imagens/estilista/essencia
+      !tooltip: tr('Para fabricar a roupa voce precisa de:\n 15 folhas de arbusto.')
+      @onClick:  g_game.talk("#essencia#")
+
+    MarketeButton
+      !text: tr('Tecido(x5)\nUsado para criacao de Roupas!')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 1082
+      margin-left: 15
+      icon: imagens/estilista/tecido
+      !tooltip: tr('Para fabricar a roupa voce precisa de:\n 5 Tabua e 5 Essencia.')
+      @onClick:  g_game.talk("#tecido#")

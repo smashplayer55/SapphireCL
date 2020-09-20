@@ -1,0 +1,14 @@
+UIWindow
+  id: janela
+  !text: tr('Lista De Pokemons')
+  text-offset: -60 10
+  font: terminus-10px
+  color: #e8c05e
+  size: 195 295
+  anchors.left: parent.left
+  anchors.top: parent.top
+  margin-top: 200
+  margin-left: 2
+  @onHoverChange: modules.poke_bar.onMoveBottomPanelHoverChange(self)
+  focusable: false
+  image-source: window

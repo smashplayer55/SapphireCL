@@ -1,0 +1,10 @@
+Module
+  name: npcChat
+  description: Game NpcDialog
+  author: Luis
+  sandboxed: true
+  scripts: [ npcChat ]
+  autoload: true
+  autoload-priority: 1001
+  @onLoad: init()
+  @onUnload: terminate()

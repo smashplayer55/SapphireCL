@@ -1,0 +1,536 @@
+Teste < UIButton
+  id: teste
+  text-offset: 15 -10
+  font: verdana-11px-rounded
+  color: white
+  icon-align: left
+  icon-offset: 5 0
+  height: 55
+  width: 330
+  background-color: #000000AA
+  border-width: 1
+  border-color: black
+  anchors.top: parent.top
+  anchors.right: parent.right
+
+  $hover:
+    background-color: #666666AA
+    border-color: #666666
+
+  $pressed:
+    background-color: #333333AA
+    border-color: #333333
+
+  $disabled:
+    background-color: #330000AA
+    border-color: #330000
+    color: red
+
+Felipe < UIButton
+  id: teste
+  text-offset: 15 -10
+  font: verdana-11px-rounded
+  color: white
+  icon-align: left
+  icon-offset: 5 0
+  height: 55
+  width: 330
+  background-color: #000000AA
+  border-width: 1
+  border-color: black
+  anchors.top: parent.top
+  anchors.right: parent.right
+
+  $hover:
+    background-color: #666666AA
+    border-color: #666666
+
+  $pressed:
+    background-color: #333333AA
+    border-color: #333333
+
+  $disabled:
+    background-color: #330000AA
+    border-color: #330000
+    color: red 
+
+Gabriel < UIButton
+  id: teste
+  text-offset: 15 -10
+  font: verdana-11px-rounded
+  color: white
+  icon-align: left
+  icon-offset: 5 0
+  height: 55
+  width: 330
+  background-color: #000000AA
+  border-width: 1
+  border-color: black
+  anchors.top: parent.top
+  anchors.right: parent.right
+
+  $hover:
+    background-color: #666666AA
+    border-color: #666666
+
+  $pressed:
+    background-color: #333333AA
+    border-color: #333333
+
+  $disabled:
+    background-color: #330000AA
+    border-color: #330000
+    color: red
+
+Lucia < UIButton
+  id: teste
+  text-offset: 15 -10
+  font: verdana-11px-rounded
+  color: white
+  icon-align: left
+  icon-offset: 5 0
+  height: 55
+  width: 330
+  background-color: #000000AA
+  border-width: 1
+  border-color: black
+  anchors.top: parent.top
+  anchors.right: parent.right
+
+  $hover:
+    background-color: #666666AA
+    border-color: #666666
+
+  $pressed:
+    background-color: #333333AA
+    border-color: #333333
+
+  $disabled:
+    background-color: #330000AA
+    border-color: #330000
+    color: red 
+
+
+ClansButton < UIButton
+  size: 190 370
+  color: alpha
+  icon-color: #888888
+  border-width: 1
+  border-color: black
+  anchors.top: parent.top
+  anchors.left: parent.left
+  @onClick: modules.game_memory.hide()
+
+MarketeButton < Teste
+  text-offset: 5 -20
+
+Felipetwo < Felipe
+
+Gabrieltwo < Felipe
+
+Lucia < Felipe
+
+Jesus < Felipe
+
+Jynx < Felipe
+
+Testet < Felipe
+
+Xbox < Felipe
+
+MainWindow
+  id: engWindow
+  size: 550 400
+  !text: tr('Engineer Workshop')
+  padding: 2
+  @onEnter: modules.game_eng.hide()
+  @onEscape: modules.game_eng.hide()
+
+  ClansButton
+    text: gardestrike
+    icon: imagens/estilista/todd
+    margin-top: 25
+    margin-left: 5
+
+  UIButton
+    id: closeButton
+    anchors.top: parent.top
+    anchors.right: parent.right
+    margin-top: 2
+    margin-right: 12
+    size: 14 14
+    image-source: /images/game/guide/button
+    image-clip: 0 0 14 14
+    @onClick: hide()
+
+  UIButton
+    id: aleatorio
+    anchors.top: parent.top
+    anchors.right: parent.right
+    margin-top: 25
+    margin-right: 15
+    size: 330 370
+    background-color: #000000AA
+
+  VerticalScrollBar
+    id: scrollBar
+    step: 35
+    pixels-scroll: true
+    anchors.top: parent.top
+    anchors.right: parent.right
+    anchors.bottom: parent.bottom
+
+  ScrollablePanel
+    vertical-scrollbar: scrollBar
+    anchors.fill: parent
+    margin-right: 15    
+    margin-top: 25
+
+    MarketeButton
+      !text: tr('Frente de Metal\nUsado para construção de robos!')
+      text-align: left
+      text-offset: 40 -0
+      margin-left: 15
+      icon: imagens/estilista/mchest
+      !tooltip: tr('Para fabricar o item você precisa de:\n 200 Screw, 20 Barras de Ferro.') 
+      @onClick:  g_game.talk("#robo1#")
+
+    MarketeButton
+      !text: tr('Braço Direito\nUsado para construção de robos!')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 54
+      margin-left: 15
+      icon: imagens/estilista/md
+      !tooltip: tr('Para fabricar o item você precisa de:\n 50 electric box, 20 Barras de Ferro.') 
+      @onClick:  g_game.talk("#robo2#")
+
+    MarketeButton
+      !text: tr('Braço Esquerdo\nUsado para construção de robos!')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 108
+      margin-left: 15
+      icon: imagens/estilista/me
+      !tooltip: tr('Para fabricar o item você precisa de:\n 50 Imam, 20 Barras de Ferro.') 
+      @onClick:  g_game.talk("#robo3#")
+
+    MarketeButton
+      !text: tr('Chip de Memoria\nUsado para construção de robos!')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 163
+      margin-left: 15
+      icon: imagens/estilista/chip
+      !tooltip: tr('Para fabricar o item você precisa de:\n 50 Raichu Tail, 20 Barras de Ferro.') 
+      @onClick:  g_game.talk("#robo4#")
+
+    MarketeButton
+      !text: tr('Nucleo de Energia\nUsado para construção de robos!')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 217
+      margin-left: 15
+      icon: imagens/estilista/nucleo
+      !tooltip: tr('Para fabricar o item você precisa de:\n 30 Thunder Stones, 10 Barras de Ferro.') 
+      @onClick:  g_game.talk("#robo5#")
+
+    MarketeButton
+      !text: tr('Robo Normal\nAumenta HP + 20.000 e Speed +100!')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 272
+      margin-left: 15
+      icon: imagens/estilista/mecha
+      !tooltip: tr('Para fabricar o item você precisa de:\n Das 5 Partes do Robo.') 
+      @onClick:  g_game.talk("#robo6#")
+
+    MarketeButton
+      !text: tr('Water Robot\nAumenta HP + 30.000 e Speed +200!')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 326
+      margin-left: 15
+      icon: imagens/estilista/mecha1
+      !tooltip: tr('Para fabricar o item você precisa de:\n 50 Water stones , Robo Normal.') 
+      @onClick:  g_game.talk("#roboazul#")
+
+    MarketeButton
+      !text: tr('Fire Robot\nAumenta HP + 30.000 e Speed +200!')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 380
+      margin-left: 15
+      icon: imagens/estilista/mecha2
+      !tooltip: tr('Para fabricar o item você precisa de:\n 50 Fire stones , Robo Normal.') 
+      @onClick:  g_game.talk("#robovermelho#")
+
+    MarketeButton
+      !text: tr('Leaf Robot\nAumenta HP + 30.000 e Speed +200!')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 434
+      margin-left: 15
+      icon: imagens/estilista/mecha4
+      !tooltip: tr('Para fabricar o item você precisa de:\n 50 Leaf stones , Robo Normal.') 
+      @onClick:  g_game.talk("#roboverde#")
+
+    MarketeButton
+      !text: tr('Dark Robot\nAumenta HP + 30.000 e Speed +200!')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 488
+      margin-left: 15
+      icon: imagens/estilista/mecha3
+      !tooltip: tr('Para fabricar o item você precisa de:\n 50 Darkness stones , Robo Normal.') 
+      @onClick:  g_game.talk("#roboroxo#")
+
+    MarketeButton
+      !text: tr('Engine\nUsado para contrução de motos.')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 542
+      margin-left: 15
+      icon: imagens/estilista/engine
+      !tooltip: tr('Para fabricar o item você precisa de:\n 50 Barras de Ferro.') 
+      @onClick:  g_game.talk("#moto1#")
+
+    MarketeButton
+      !text: tr('Pneo\nUsado para contrução de motos.')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 596
+      margin-left: 15
+      icon: imagens/estilista/pneo
+      !tooltip: tr('Para fabricar o item você precisa de:\n 50 turtle hull.')  
+      @onClick:  g_game.talk("#moto2#")
+        
+    MarketeButton
+      !text: tr('Tinta Preta\nUsado na coloração de objetos.')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 650
+      margin-left: 15
+      icon: imagens/estilista/bdye
+      !tooltip: tr('Para fabricar este item você precisa de:\n 2 Rock stone , 20 Folhas de Arbusto') 
+      @onClick:  g_game.talk("#tintapreta#")
+                        
+    MarketeButton
+      !text: tr('Tinta Azul\nUsado na coloração de objetos.')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 704
+      margin-left: 15
+      icon: imagens/estilista/adye
+      !tooltip: tr('Para fabricar este item você precisa de:\n 2 Water stone , 20 Folhas de Arbusto')  
+      @onClick:  g_game.talk("#tintaazul#")
+                        
+    MarketeButton
+      !text: tr('Tinta Vermelha\nUsado na coloração de objetos.')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 758
+      margin-left: 15
+      icon: imagens/estilista/rdye
+      !tooltip: tr('Para fabricar este item você precisa de:\n 2 Fire stone , 20 Folhas de Arbusto')   
+      @onClick:  g_game.talk("#tintavermelha#")
+                        
+    MarketeButton
+      !text: tr('Tinta Rosa\nUsado na coloração de objetos.')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 812
+      margin-left: 15
+      icon: imagens/estilista/pdye
+      !tooltip: tr('Para fabricar este item você precisa de:\n 2 Heart Stone , 20 Folhas de Arbusto') 
+      @onClick:  g_game.talk("#tintarosa#")
+                        
+    MarketeButton
+      !text: tr('Tinta Verde\nUsado na coloração de objetos.')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 866
+      margin-left: 15
+      icon: imagens/estilista/gdye
+      !tooltip: tr('Para fabricar este item você precisa de:\n 2 Leaf Stone , 20 Folhas de Arbusto') 
+      @onClick:  g_game.talk("#tintaverde#")
+                        
+    MarketeButton
+      !text: tr('Tinta Amarela\nUsado na coloração de objetos.')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 920
+      margin-left: 15
+      icon: imagens/estilista/ydye
+      !tooltip: tr('Para fabricar este item você precisa de:\n 2 Thunder Stone , 20 Folhas de Arbusto') 
+      @onClick:  g_game.talk("#tintaamarela#")
+                        
+    MarketeButton
+      !text: tr('Moto Preta\nAumenta + 500 de Speed.')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 974
+      margin-left: 15
+      icon: imagens/estilista/bmoto
+      !tooltip: tr('Para fabricar este item você precisa de:\n 1 Tinta Preta , 2 Pneos , 1 Moto Semi Feita.') 
+      @onClick:  g_game.talk("#motopreta#")
+
+    MarketeButton
+      !text: tr('Moto Azul\nAumenta +500 de Speed.')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 1028
+      margin-left: 15
+      icon: imagens/estilista/amoto
+      !tooltip: tr('Para fabricar este item você precisa de:\n 1 Tinta Azul , 2 Pneos , 1 Moto Semi Feita.')
+      @onClick:  g_game.talk("#motoazul#")
+                                        
+    MarketeButton
+      !text: tr('Moto Verde\nAumenta +500 de Speed')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 1082
+      margin-left: 15
+      icon: imagens/estilista/gmoto
+      !tooltip: tr('Para fabricar este item você precisa de:\n 1 Tinta Verde , 2 Pneos , 1 Moto Semi Feita.')
+      @onClick:  g_game.talk("#motoverde#")
+
+    MarketeButton
+      !text: tr('Moto Rosa\nAumenta +500 de Speed')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 1136
+      margin-left: 15
+      icon: imagens/estilista/pmoto
+      !tooltip: tr('Para fabricar este item você precisa de:\n 1 Tinta Rosa , 2 Pneos , 1 Moto Semi Feita.')
+      @onClick:  g_game.talk("#motorosa#")
+
+    MarketeButton
+      !text: tr('Moto Vermelha\nAumenta +500 de Speed')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 1190
+      margin-left: 15
+      icon: imagens/estilista/rmoto
+      !tooltip: tr('Para fabricar este item você precisa de:\n 1 Tinta Vermelha , 2 Pneos , 1 Moto Semi Feita.')
+      @onClick:  g_game.talk("#motovermelha#")
+
+    MarketeButton
+      !text: tr('Moto Amarela\nAumenta +500 de Speed')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 1244
+      margin-left: 15
+      icon: imagens/estilista/ymoto
+      !tooltip: tr('Para fabricar este item você precisa de:\n 1 Tinta Amarela , 2 Pneos , 1 Moto Semi Feita.')
+      @onClick:  g_game.talk("#motoamarela#")
+
+    MarketeButton
+      !text: tr('Magu Ball\n 2x Mais cath em pokemons do tipo:\n Fire e Ground')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 1298
+      margin-left: 15
+      icon: imagens/estilista/magub
+      !tooltip: tr('Para fabricar este item você precisa de:\n 15 Barras de Ferro , 15 Earth Stones , 15 Fire Stones.')
+      @onClick:  g_game.talk("#magu#")
+
+    MarketeButton
+      !text: tr('Sora Ball\n 2x Mais cath em pokemons do tipo:\n Ice e Flying')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 1352
+      margin-left: 15
+      icon: imagens/estilista/sorab
+      !tooltip: tr('Para fabricar este item você precisa de:\n 15 Barras de Ferro , 15 Ice Stones , 15 Hearth Stones.')
+      @onClick:  g_game.talk("#sora#")
+
+    MarketeButton
+      !text: tr('Yume Ball\n 2x Mais cath em pokemons do tipo:\n Normal e Psychic')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 1406
+      margin-left: 15
+      icon: imagens/estilista/yumeb
+      !tooltip: tr('Para fabricar este item você precisa de:\n 15 Barras de Ferro , 15 Enigma Stones , 15 Hearth Stones.')
+      @onClick:  g_game.talk("#yume#")
+
+    MarketeButton
+      !text: tr('Dusk Ball\n 2x Mais cath em pokemons do tipo:\n Rock e Fighting')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 1460
+      margin-left: 15
+      icon: imagens/estilista/duskb
+      !tooltip: tr('Para fabricar este item você precisa de:\n 15 Barras de Ferro , 15 Rock Stones , 15 Punch Stones.')
+      @onClick:  g_game.talk("#dusk#")
+
+    MarketeButton
+      !text: tr('Moon Ball\n 2x Mais cath em pokemons do tipo:\n Ghost e Dark')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 1514
+      margin-left: 15
+      icon: imagens/estilista/moonb
+      !tooltip: tr('Para fabricar este item você precisa de:\n 15 Barras de Ferro , 30 Darkness Stones.')
+      @onClick:  g_game.talk("#moon#")
+
+    MarketeButton
+      !text: tr('Tale Ball\n 2x Mais cath em pokemons do tipo:\n Dragon e Fairy')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 1568
+      margin-left: 15
+      icon: imagens/estilista/taleb
+      !tooltip: tr('Para fabricar este item você precisa de:\n 15 Barras de Ferro , 15 Crystal Stones , 15 Hearth Stones.')
+      @onClick:  g_game.talk("#tale#")
+
+    MarketeButton
+      !text: tr('Net Ball\n 2x Mais cath em pokemons do tipo:\n Bug e Water')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 1622
+      margin-left: 15
+      icon: imagens/estilista/netb
+      !tooltip: tr('Para fabricar este item você precisa de:\n 15 Barras de Ferro , 15 Cocoon Stones , 15 Water Stones.')
+      @onClick:  g_game.talk("#net#")
+
+    MarketeButton
+      !text: tr('Tinker Ball\n 2x Mais cath em pokemons do tipo:\n Electric e Steel')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 1676
+      margin-left: 15
+      icon: imagens/estilista/tinkerb
+      !tooltip: tr('Para fabricar este item você precisa de:\n 15 Barras de Ferro , 30 Thunder Stones.')
+      @onClick:  g_game.talk("#tinker#")
+
+    MarketeButton
+      !text: tr('Heavy Ball\n 2x Mais cath em pokemons do tipo:\n Pokemons Pesados')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 1730
+      margin-left: 15
+      icon: imagens/estilista/heavyb
+      !tooltip: tr('Para fabricar este item você precisa de:\n 15 Barras de Ferro , 50 Stone orbs , 30 Bulbs.')
+      @onClick:  g_game.talk("#heavy#")
+
+    MarketeButton
+      !text: tr('Fast Ball\n 2x Mais cath em pokemons do tipo:\n Pokemons Rapidos')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 1784
+      margin-left: 15
+      icon: imagens/estilista/fastb
+      !tooltip: tr('Para fabricar este item você precisa de:\n 15 Barras de Ferro , 30 Raichu Tail , 15 Thunder Stones.')
+      @onClick:  g_game.talk("#fast#")
+
+    MarketeButton
+      !text: tr('Barras de Ferro(x5)\nUsado para criacao de itens!')
+      text-align: left
+      text-offset: 40 -0
+      margin-top: 1838
+      margin-left: 15
+      icon: imagens/estilista/bferro
+      !tooltip: tr('Para fabricar este item você precisa de:\n 15 Minerios de Ferro.')
+      @onClick:  g_game.talk("#bferro#")

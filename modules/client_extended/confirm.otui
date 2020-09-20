@@ -1,0 +1,47 @@
+LineList < UILabel
+  font: verdana-11px-monochrome
+  background-color: alpha
+  text-offset: 2 0
+  phantom: false
+
+  $focus:
+    background-color: #ffffff22
+MainWindow
+  id: textWindow
+  size: 480 410
+  !text: tr('Confirm')
+  Button
+    id: copysender
+    !text: tr('Mark as solved and send message')
+    anchors.top: parent.top
+    anchors.left: parent.left
+    anchors.right: parent.right
+    margin-top: 0
+    @onClick: trueSolve()
+  Button
+    id: copysaender
+    !text: tr('Cancel')
+    anchors.top: prev.bottom
+    anchors.left: parent.left
+    anchors.right: parent.right
+    margin-top: 2
+    @onClick: trueCancel()
+  MultilineTextEdit
+    id: com
+    anchors.top: parent.top
+    anchors.bottom: parent.bottom
+    margin-top: 50
+    margin-right: 10
+    anchors.left: parent.left
+    anchors.right: parent.right
+
+  VerticalScrollBar
+    id: textScroll
+    anchors.left: prev.right
+    anchors.top: prev.top
+    anchors.bottom: prev.bottom
+    minimum: 0
+    maximum: 0
+    step: 1
+    value: 0
+    pixels-scroll: true

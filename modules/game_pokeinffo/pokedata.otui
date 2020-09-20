@@ -1,0 +1,231 @@
+LabelICON < Label
+  color: #dfdfdfff
+  anchors.top: parent.top
+  anchors.left: prev.right
+  margin-top: -1
+  margin-left: 3
+
+PanelICON < Panel
+  anchors.top: parent.top
+  anchors.left: parent.left
+  margin-left: -5
+
+ConditionWidget < UIWidget
+  size: 12 6
+
+  $!first:
+    margin-left: 2
+
+
+MiniWindow
+  image-source: infow3.png
+  id: PokeData
+  !text: tr(' Pokemon Info')
+  font: terminus-10px
+  color: #e8c05e
+  height: 160
+  &save: true
+  icon: pokemon.png
+  @onClose: hide()
+
+  MiniWindowContents
+    UIItem
+      id: SL
+      anchors.top: parent.top
+      anchors.left: parent.left
+      margin-left: 6
+      size: 40 40
+      margin-top: 4
+      phantom: false
+      opacity: 2
+    UIItem
+      id: pwin
+      anchors.top: parent.top
+      anchors.left: parent.left
+      margin-left: 6
+      size: 40 40
+      margin-top: 4
+      phantom: false
+      opacity: 2
+      image-source: pwin.png
+    UIItem
+      id: nome
+      width: 130
+      color: white
+      font: verdana-11px-rounded
+      anchors.top: SL.top
+      anchors.left: SL.right
+      margin-left: 5
+      margin-top: 0
+      image-source: name.png
+    ProgressBar
+      id: bar
+      image-source: progressbar.png
+      !text: tr('')
+      anchors.top: parent.bottom
+      anchors.left: parent.left
+      size: 90 10
+      margin-top: -113
+      margin-left: 65
+    ProgressBar
+      id: fishbar
+      image-source: progressbar.png
+      size: 90 10
+      background-color: #00b0ff
+      anchors.top: prev.bottom
+      anchors.left: prev.left
+      anchors.right: prev.right
+      margin-top: 3
+    UIItem
+      id: fishbar2
+      image-source: progressbar2.png
+      size: 90 10
+      anchors.top: prev.bottom
+      anchors.left: prev.left
+      anchors.right: prev.right
+      margin-top: -9
+    UIItem
+      id: bar2
+      image-source: progressbar3.png
+      size: 90 10
+      anchors.top: prev.bottom
+      anchors.left: prev.left
+      anchors.right: prev.right
+      margin-top: -21
+    UIItem
+      id: expp
+      width: 130
+      color: #b8994a
+      font: terminus-10px
+      anchors.top: SL.top
+      anchors.left: SL.right
+      margin-left: 58
+      margin-top: 28
+      text:
+    UIItem
+      id: exppz
+      width: 13
+      image-source: expz.png
+      anchors.top: SL.top
+      anchors.left: SL.right
+      margin-left: 6
+      margin-top: 31
+    UIItem
+      id: hpp
+      width: 130
+      color: #b8994a
+      font: terminus-10px
+      anchors.top: SL.top
+      anchors.left: SL.right
+      margin-left: 58
+      margin-top: 16
+      text: 
+    UIItem
+      id: hppz
+      width: 9
+      image-source: hpz.png
+      anchors.top: SL.top
+      anchors.left: SL.right
+      margin-left: 10
+      margin-top: 19
+    Button
+      width: 60
+      id: mve
+      anchors.left: parent.left
+      anchors.top: SL.bottom
+      margin-left: 5
+      margin-top: 15
+      @onClick: modules.game_pokeinffo.pressB('m')
+
+      PanelICON
+        image-source: /modules/game_pokeinffo/up
+        margin-top: 0
+
+      LabelICON
+        !text: ("Up")
+
+    Button
+      width: 60
+      id: locka
+      anchors.left: prev.right
+      anchors.top: prev.top
+      margin-left: 1
+      !text: ("Call")
+      @onClick: modules.game_pokeinffo.pressB('b')
+      PanelICON
+        image-source: /modules/game_pokeinffo/unlock
+        margin-top: 2
+
+    Button
+      width: 60
+      id: reala
+      anchors.left: parent.left
+      anchors.top: mve.bottom
+      margin-left: 5
+      margin-top: 1
+      enabled: true
+      @onClick: modules.game_pokeinffo.pressB('h')
+      PanelICON
+        image-source: /modules/game_pokeinffo/down
+        margin-top: -2
+        margin-left: -5
+
+      LabelICON
+        !text: ("Down")
+    Button
+      width: 60
+      id: locka
+      anchors.left: prev.right
+      anchors.top: mve.bottom
+      margin-left: 1
+      margin-top: 1
+      @onClick: modules.game_pokeinffo.pressB('c')
+      PanelICON
+        image-source: /modules/game_pokeinffo/run
+        size: 11 12
+        margin-left: -3
+
+      LabelICON
+        !text: ("Run")
+    TabButton
+      id: LBB
+      anchors.left: prev.right
+      anchors.top: reala.top
+      margin-top: -10
+      icon: lefticon.png
+      @onClick: modules.game_pokeinffo.pressA(3)
+    TabButton
+      anchors.left: prev.right
+      anchors.top: reala.top
+      margin-top: -30
+      icon: upicon.png
+      @onClick: modules.game_pokeinffo.pressA(0)
+    TabButton
+      anchors.left: LBB.right
+      anchors.top: prev.bottom
+      icon: downicon.png
+      margin-top: 20
+      @onClick: modules.game_pokeinffo.pressA(2)
+    TabButton
+      anchors.left: prev.right
+      anchors.top: LBB.top
+      icon: righticon.png
+      @onClick: modules.game_pokeinffo.pressA(1)
+    TabButton
+      anchors.left: LBB.right
+      anchors.top: prev.bottom
+      icon: order.png
+      margin-top: -19
+      @onClick: modules.game_pokeinffo.pressB(m)
+    Panel
+      id: conditionPanel
+      layout:
+        type: horizontalBox
+      size: 50 18
+      padding: 2
+      margin-top: -22
+      margin-left: 5
+      margin-right: 4
+      anchors.top: parent.bottom
+      anchors.left: parent.left
+      anchors.right: parent.right
